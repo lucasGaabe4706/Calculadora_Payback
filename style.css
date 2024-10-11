@@ -1,0 +1,213 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(Background_Payback_01.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Mantém os elementos em coluna */
+  }
+  
+  .botao-iniciar {
+    display: flex; /* Torna o container flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Garante que a altura seja 100% da tela */
+    flex-direction: column; /* Organiza os elementos em coluna */
+  }
+  
+  header {
+    position: absolute;
+    top: 10vh; /* Usa vh para manter proporção com altura da tela */
+    width: 50vw; /* Faz o header ocupar toda a largura da tela */
+    text-align: center; /* Centraliza o texto no meio da tela */
+    margin-bottom: 10vh;
+  }
+  
+  nav {
+    position: fixed;
+    padding-top: 10px;
+    top: 0;
+    width: 50vw; /* Usando 100% da largura da tela */
+    height: 4vh; /* Altura ajustada de forma responsiva */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0; /* Usando vw para margem responsiva */
+    height: 1vh;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.51vw; /* Tamanho da fonte em vw */
+    padding: 1vh 2vw;
+    transition: background-color 0.3s;
+    height: 1vh;
+  }
+  
+  nav ul li a:hover {
+    background-color: green;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: 1vh;
+    color: white;
+    font-size: 20px; /* Tamanho responsivo do título */
+  }
+  
+  header h3 {
+    margin: 0;
+    color: white;
+    font-size: 1vw; /* Tamanho responsivo do subtítulo */
+  }
+  
+  .iniciar {
+    padding: 0.75vh 0.9vw;
+    border-radius: 60px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.5vw; /* Fonte responsiva */
+    border: none;
+    cursor: pointer;
+  }
+  
+  .iniciar:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo geral do pop-up */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Conteúdo do pop-up */
+  .popup-content {
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    width: 80vw; /* Largura responsiva */
+    max-width: 600px; /* Largura máxima para telas grandes */
+    display: flex;
+    flex-direction: column; /* Coloca os itens um abaixo do outro */
+    align-items: center; /* Centraliza horizontalmente */
+  }
+  
+  .popup-content h1 {
+    text-align: center;
+    margin-bottom: vh;
+    font-size: 3vw; /* Tamanho responsivo do título */
+  }
+  
+  .popup-content input,
+  .popup-content label {
+    font-size: smaller;
+    width: 40%; /* Largura dos inputs e labels em % */
+    max-width: 400px; /* Largura máxima para inputs */
+    height: 1vh;
+    margin-bottom: 2vh; /* Espaço entre os elementos */
+  }
+  
+  .popup-content input {
+    padding: 1.5vh;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 1.2vw; /* Tamanho responsivo do texto */
+  }
+  
+  .popup-content ::placeholder {
+    font-size: 1.2vw;
+    font-style: italic;
+    color: #ccc;
+  }
+  
+  .popup-content button {
+    border-radius: 8rem;
+    border: none;
+    margin-top: 2vh;
+    margin-left: 30%;
+    padding: 0.7vh 1vw;
+    background-color: #6ab142;
+    color: white;
+    font-size: 0.9vw;
+    cursor: pointer;
+  }
+  
+  .resultados {
+    font-size: 1vw;
+    padding: 10px;
+  }
+  
+  .popup-content button:hover {
+    background-color: #44881d;
+  }
+  
+  /* Botão de fechar */
+  .close {
+    position: absolute;
+    top: 1vh;
+    right: 3vw;
+    color: transparent;
+    font-size: 4vw;
+    cursor: pointer;
+  }
+  
+  footer {
+    width: 50vw; /* Largura total da viewport */
+    margin-top: auto;
+    z-index: 1;
+  }
+  
+  .logo {
+    width: 10vw; /* Ajusta a largura da imagem responsivamente */
+    height: auto; /* Mantém a proporção */
+    margin-bottom: -2%;
+  }
+  
+  .footer-content {
+    display: flex; /* Torna o footer um contêiner flexível */
+    align-items: center; /* Alinha verticalmente o logo e o texto */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 2vh; /* Adiciona um pouco de espaço interno */
+    color: white; /* Define a cor do texto */
+  }
+  
+  .footer-text {
+    margin-left: 1vw; /* Espaço entre o logo e o texto */
+    margin-bottom: -6%;
+    font-size: 0.9vw; /* Tamanho responsivo do texto */
+  }
+  
+  .linkedin {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .linkedin:hover {
+    font-size: 20px; /* Aumenta a fonte ao passar o mouse */
+    color: white;
+  }
+  
